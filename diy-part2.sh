@@ -16,5 +16,5 @@
 # Modify default IP
 #!/bin/bash
 #=================================================
-sed -i "s/192.168.7.1/192.168.7.101/" package/base-files/files/bin/config_generate
+sed -i "s/192.168.1.1/192.168.7.101/" package/base-files/files/bin/config_generate
 sed -i 's/$(TARGET_DIR)) install/$(TARGET_DIR)) install --force-overwrite --force-depends/' package/Makefile
